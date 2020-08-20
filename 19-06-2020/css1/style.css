@@ -1,0 +1,921 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Muli:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@500;700&display=swap');
+
+/* >... */
+
+
+/* IN RESET */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: #e7e7e7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.button:focus,
+button:active {
+    outline: none;
+}
+
+
+/* a:hover {
+    text-decoration: underline;
+} */
+
+
+/* a:link {
+    color: #000(0, 0, 0);
+} */
+
+
+/* link que foi visitado */
+
+
+/* a:visited {
+    color: rgb(0, 0, 0);
+} */
+
+
+/* mouse over */
+
+
+/* a:hover {
+    color: #000;
+} */
+
+
+/* link selecionado */
+
+
+/* a:active {
+    color: #000;
+} */
+
+
+/* OUT RESET */
+
+
+/* IN HEADER */
+
+
+/*
+    header {
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        font-family: 'Noto Sans TC', sans-serif;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        top: 0;
+    }
+    
+    header ul {
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    header li {
+        opacity: 0.8;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+    
+    header li:last-child {
+        opacity: 0.8;
+        margin-right: 100px;
+    }
+    
+    header li:hover {
+        opacity: 1;
+    }
+    */
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.BoxHeader {
+    height: 45px;
+    /* header formated: */
+    width: 90%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    /* -/- */
+    font-family: 'Noto Sans TC', sans-serif;
+    position: fixed;
+    margin-top: 2%;
+    opacity: 0.92;
+    /* position: absolute */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    border: solid 1px #6d4a4a59;
+    box-shadow: 10px 5px 10px #00000010;
+}
+
+header ul {
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header li {
+    opacity: 0.8;
+    text-align: center;
+    margin-right: 0px;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+header li:last-child {
+    opacity: 0.8;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+header li:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    height: 3em;
+    border-radius: 10px;
+    background-color: rgb(223, 223, 223);
+}
+
+.mobile {
+    display: none;
+}
+
+.EsqBoxHeaderDesk img {
+    margin-left: 30px;
+    padding: 0;
+    height: 32px;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.DirBoxHeaderDesk {
+    display: flex;
+}
+
+@media (max-width: 900px) {
+    header {
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        font-family: 'Noto Sans TC', sans-serif;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        margin-bottom: 10px;
+    }
+    header ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header li {
+        opacity: 0.9;
+        cursor: pointer;
+        margin-right: 0;
+    }
+    header li:last-child {
+        opacity: 1;
+        margin-right: 0;
+    }
+    header li:hover {
+        opacity: 1;
+    }
+    /*
+        header ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        header li:last-child {
+            margin-left: 7%;
+        }
+        header li {
+            opacity: 0.9;
+            margin-right: 0;
+        }
+        header li:last-child {
+            opacity: 1;
+            margin-right: 0;
+        } */
+    /* desktop (none) */
+    .desktop {
+        display: none;
+    }
+    /* MOBILE */
+    .mobile {
+        display: block;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #ffffff;
+        position: relative;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a {
+        color: #5f5f5f;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 13px;
+        display: block;
+    }
+    .topnav a.icon {
+        background: #ffffff;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    .topnav a:active {
+        background-color: #ffffff;
+        color: #383838;
+    }
+    .topnav a:hover {
+        background-color: #f1f1f1;
+    }
+    .base-home {
+        font-family: 'Noto Sans TC', sans-serif;
+        margin-left: 20px;
+        padding: 7.5px 0 7.5px 0;
+        color: #2b2b2b;
+    }
+}
+
+
+/* OUT HEADER */
+
+
+/* IN IMAGE */
+
+.family {
+    background-image: url(../img/family.png);
+    background-size: cover;
+    min-height: 100vh;
+    color: rgb(253, 253, 253);
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px black;
+}
+
+.family h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.family h3 {
+    margin: 0 0 4% 0;
+}
+
+.family-end {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.family-end img {
+    opacity: 0.68;
+    cursor: pointer;
+    /* Animated */
+    animation: familyBack 4s infinite;
+}
+
+.titulo {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    margin-top: 10%;
+}
+
+@keyframes familyBack {
+    6% {
+        margin-bottom: 0px;
+    }
+    15% {
+        margin-bottom: 20px;
+    }
+    30% {
+        margin-bottom: 0px;
+    }
+    35% {
+        margin-bottom: 12px;
+    }
+    43% {
+        margin-bottom: 0px;
+    }
+    70% {
+        margin-bottom: 0px;
+    }
+    79% {
+        margin-bottom: 5px;
+    }
+    84% {
+        margin-bottom: 0px;
+    }
+}
+
+.family-end :hover {
+    opacity: 1;
+}
+
+.button {
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.button1 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-bottom: 40px;
+}
+
+.button1:hover {
+    background-color: #00000033;
+    border: 2.5px solid #fff;
+}
+
+
+/* OUT IMAGE */
+
+
+/* ESPECIAL */
+
+.box_especial {
+    background-color: #1f1f1f;
+}
+
+.desktop_especial {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#first_image_especial {
+    width: 75%;
+}
+
+#secondary_image_especial {
+    width: 25%;
+}
+
+#saberMais_especial {
+    padding: 0.5rem 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #1f1f1f;
+    font-size: 0.85em;
+}
+
+#saberMais_especial a {
+    margin-left: 10px;
+    color: #d2ab77;
+}
+
+
+/* ESPECIAL out */
+
+
+/* CONHEÃ‡A - ÃšNICA IMAGEM */
+
+.conhe_img {
+    width: 100%;
+    height: auto;
+    background-color: #1f1f1f;
+}
+
+.conhe_img_desk img {
+    width: 100%;
+}
+
+.conhe_img_mobile img {
+    width: 100%;
+}
+
+
+/* CONHEÃ‡A - ÃšNICA IMAGEM */
+
+.box-products {
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: row;
+    font-family: 'Comfortaa', cursive;
+}
+
+.perfumaria-box {
+    height: 250px;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    width: 50%;
+    background-color: red;
+    /* background para navegadores que nÃ£o tenham suprte para gradients*/
+    background-image: linear-gradient(to bottom right, #222222, #000);
+}
+
+.medicamentos-box img {
+    /* margin-top: 10%;
+    margin-left: 5%; */
+    margin: 30% 5% 0% 5%;
+}
+
+.perfumaria-box img {
+    /* margin-top: 10%;
+    margin-left: 5%; */
+    margin: 30% 5% 0% 5%;
+}
+
+
+/* .perfumaria-box img {
+    height: 100%;
+} */
+
+.medicamentos-box {
+    height: 250px;
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    background-color: red;
+    /* background para navegadores que nÃ£o tenham suprte para gradients*/
+    background-image: linear-gradient(to bottom right, #750a0a, #971149);
+}
+
+
+/* IN MEDICAMENTOS BOX */
+
+@media (max-width: 900px) {
+    .box-products {
+        flex-direction: column;
+    }
+    .perfumaria-box {
+        width: 100%;
+        height: 200px;
+    }
+    .medicamentos-box {
+        width: 100%;
+        height: 200px;
+    }
+    .family h1 {
+        font-size: 3em;
+    }
+    .family h3 {
+        margin: 0 40px 10% 40px;
+    }
+    .img-esq-boxex {
+        width: 50%;
+    }
+    .family-end {
+        height: 250px;
+    }
+    .family-end img {
+        opacity: 1;
+    }
+}
+
+
+/* CONFUGURAÃ‡Ã•ES CAIXAS (MEDICAMENTO - PERFUMARIA) */
+
+.box-products-2 {
+    color: #fff;
+    margin: 12% 0 0 5%;
+    width: 50%;
+}
+
+.box-products-2 h4 {
+    margin: 0;
+}
+
+.box-products-2 p {
+    font-size: 0.85em;
+}
+
+.medicamentos-box-2 {
+    color: #fff;
+    margin: 12% 0 0 5%;
+    width: 50%;
+}
+
+.medicamentos-box-2 h4 {
+    margin: 0;
+}
+
+.medicamentos-box-2 p {
+    font-size: 0.85em;
+}
+
+.img-esq-boxex {
+    width: 30%;
+}
+
+
+/* ENTREGA */
+
+.box-entrega {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.entrega-dir {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CONTATO */
+
+.contato {
+    width: 100%;
+    background-color: #15d798;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    padding: 14px 0;
+}
+
+.spaceButton {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: large;
+    margin: 0;
+}
+
+.buttons {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* TAXA */
+
+.taxa-entrega {
+    width: 100%;
+    box-sizing: initial;
+    background-image: linear-gradient(to right, #1a1a1a, #1f1f1f);
+    background-color: #1a1a1a;
+    display: flex;
+    font-family: 'Comfortaa', cursive;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.esq-taxa-entrega {
+    width: 40%;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.dir-taxa-entrega {
+    width: 40%;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+/* .spaceButton:last-child {
+    margin-left: 10px;
+    text-transform: uppercase;
+} */
+
+.cont-contact {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .cont-contact {
+        display: none;
+    }
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .box-products-2 {
+        margin: 6% 0 0 5%;
+    }
+    .medicamentos-box-2 {
+        margin: 6% 0 0 5%;
+    }
+    .esq-taxa-entrega {
+        width: 100%;
+    }
+    .dir-taxa-entrega {
+        width: 100%;
+    }
+    .dir-taxa-entrega p {
+        margin-top: 0;
+    }
+}
+
+
+/* TITLES */
+
+.title-form-new {
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2.25em;
+    color: #5a5a5a;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Muli', sans-serif;
+}
+
+.title-form-new h4 {
+    margin: 20px 0;
+}
+
+.title-form-new {
+    margin: 0 0 0 4%;
+}
+
+@media (max-width: 900px) {
+    header {
+        opacity: 1;
+    }
+    .button {
+        border: none;
+        border-radius: 25px;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        color: #fff;
+    }
+    .button1 {
+        background-color: transparent;
+        border: 2px solid #fff;
+    }
+    .button1:hover {
+        background-color: #00000033;
+        border: 2.5px solid #fff;
+    }
+    .taxa-entrega {
+        flex-direction: column;
+    }
+}
+
+
+/* MIDIA */
+
+
+/* LOCATION */
+
+.map {
+    text-align: center;
+    border: 2px solid #414141;
+    width: 100%;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    color: #a5a5a5;
+    font-family: 'Comfortaa', cursive;
+}
+
+.footer-first {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-esq {
+    width: 45%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000; */
+}
+
+.footer-redesSociais {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* .footer-redesSociais img:last-child {
+    margin: 0 0 0 20px;
+} */
+
+.footer-redesSociais img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer-redesSociais img:hover {
+    opacity: 1;
+}
+
+.first-footer-esq {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-dir {
+    width: 45%;
+    height: 200;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ff0000; */
+}
+
+.footer-dir h6 {
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+    /* background-color: #ff0000; */
+}
+
+.footer-dir-back {
+    display: flex;
+}
+
+.footer-dir-dir {
+    margin: 0 0 0 12px;
+}
+
+.cont-footer-first ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.cont-footer-first {
+    width: 60%;
+    height: auto;
+    /* background-color: #ff7300; */
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* font-family: monospace; */
+    color: #6d6d6d;
+    font-size: 10px;
+    margin: 30px 0 0 0;
+}
+
+.next {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.next a {
+    color: #000;
+    opacity: 0.8;
+}
+
+.next a:hover {
+    color: #000;
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .footer-first {
+        flex-direction: column;
+    }
+    .cont-footer-first {
+        width: 60%;
+        height: auto;
+        /* background-color: #ff7300; */
+    }
+    .footer-esq {
+        width: 100%;
+        height: 80px;
+        /* background-color: #000; */
+    }
+    .footer-dir {
+        width: 100%;
+        height: 200;
+        /* background-color: #ff0000; */
+    }
+    .cont-footer-first ul {
+        margin: 0;
+        padding: 0;
+    }
+    .footer-dir .cont-footer-first {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-dir h6 {
+        display: none;
+    }
+    .footer-redesSociais {
+        width: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .midia-index iframe {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .midia-index iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .desktop_especial {
+        display: none;
+    }
+}

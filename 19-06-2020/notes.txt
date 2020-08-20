@@ -1,0 +1,30 @@
+//WHATS
+//
+href="https://wa.me/55047992781766"
+
+//EMAIL
+//
+--/--
+
+//ROLAR ATÉ UM PONTO DA PÁGINA ATRÁVES DE UM BOTÃO
+//
+$('#down').on('click', function() {
+  $('html, body').animate({
+    scrollTop: $(document).height()
+  }, 700);
+});
+
+#div1 {
+ height: 1000px;
+ background-color: red;
+}
+#div2 {
+  height: 200px;
+  background-color: blue;
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="div1">
+  <button id="down">IR LÁ PARA BAIXO</button>
+</div>
+<div id="div2"></div>
